@@ -19,7 +19,7 @@ export class EntradaComponent implements OnInit {
 
   obtenerId() {
     this.codigo = this.cookieService.get('id');
-    this.qr = `https://form.jconfdominicana.org/correo/qr?id=${this.codigo}`;
+    this.qr = `https://form.barcamp.org.do/correo/qr?id=${this.codigo}`;
   }
 
 }
