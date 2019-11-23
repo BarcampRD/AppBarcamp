@@ -30,7 +30,7 @@ export class CronogramaComponent implements OnInit {
           strDescripcion: elementCharla.descripcionCharla,
           strHora: elementCharla.horario,
           strTitulo: elementCharla.tema,
-          strAula: elementCharla.lugar,
+          strAula: elementCharla.lugar + ' ' + elementCharla.numeroAula,
           strCharlista: elementCharla.charlista,
           strDuracion: elementCharla.talkFormat,
           numIdHorario: 0
