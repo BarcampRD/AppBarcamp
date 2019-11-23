@@ -46,7 +46,7 @@ export class DashboardComponent implements OnInit {
 
 
     constructor(private logueoService: LoginService, private cookieService: CookieService,
-                private spinner: NgxSpinnerService) {
+                private spinner: NgxSpinnerService, private _sanitizer: DomSanitizer) {
         /*this.places = [
             {
                 imgSrc: 'assets/images/card-1.jpg',
@@ -88,16 +88,18 @@ export class DashboardComponent implements OnInit {
         this.spinner.show();
         this.logueoService.getCharlasRegistradas(this.txtEmail).subscribe(charlaResponse => {
             charlaResponse.charlas.forEach(charlaElement => {
+                console.log(charlaElement);
                 const charla: Charla = {
-                    strImagen: charlaElement.imagenCharlista,
+                    strImagen: charlaElement.charlista.imagenCharlista,
                     strDescripcion: charlaElement.descripcionCharla,
                     strHora: charlaElement.horario.value,
                     strTitulo: charlaElement.tema,
                     strAula: charlaElement.aula.id,
-                    strCharlista: charlaElement.charlista,
+                    strCharlista: charlaElement.charlista.nombre,
                     strDuracion: charlaElement.talkFormat,
                     numIdHorario: charlaElement.horario.id
                 };
+                // console.log(charlaResponse);
                 this.charlas.push(charla);
             });
         }, (error) => {

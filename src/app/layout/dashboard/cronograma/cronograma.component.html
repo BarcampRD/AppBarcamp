@@ -17,7 +17,7 @@
           {{ 'Welcome / Welcome speeches' | translate}}
         </mat-panel-title>
         <mat-panel-description>
-          07:00 a.m - 8:00 a.m
+          07:00 a.m - 0:00 a.m
         </mat-panel-description>
       </mat-expansion-panel-header>
       <p>{{ 'Welcome / Welcome speeches' | translate}}</p>
@@ -29,12 +29,12 @@
         {{ 'Time' | translate}} 1
       </mat-panel-title>
       <mat-panel-description>
-        8:30 a.m - 9:30 a.m
+        09:00 a.m - 10:00 a.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '8:30 a.m - 9:30 a.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '09:00 a.m - 10:00 a.m'"></app-charla>
       </div>
     </div>    
   </mat-expansion-panel>
@@ -44,12 +44,12 @@
         {{ 'Time' | translate}} 2
       </mat-panel-title>
       <mat-panel-description>
-        9:30 a.m - 10:30 a.m
+        10:00 a.m - 11:00 a.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '9:30 a.m - 10:30 a.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '10:00 a.m - 11:00 a.m'"></app-charla>
       </div>
     </div>    
   </mat-expansion-panel>
@@ -59,37 +59,37 @@
         {{ 'Time' | translate}} 3
       </mat-panel-title>
       <mat-panel-description>
-        10:30 a.m - 11:30 a.m
+        11:00 a.m - 12:00 a.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '10:30 a.m - 11:30 a.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '11:00 a.m - 12:00 p.m'"></app-charla>
       </div>
     </div>    
   </mat-expansion-panel>
-  <mat-expansion-panel>
+  <!-- <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{ 'Time' | translate}} 4
       </mat-panel-title>
       <mat-panel-description>
-        11:30 a.m - 1:00 p.m
+        12:00 p.m - 2:00 p.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '11:30 a.m - 1:00 p.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '12:00 p.m - 2:00 p.m'"></app-charla>
       </div>
     </div>    
-  </mat-expansion-panel>
+  </mat-expansion-panel> -->
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{ 'Lunch' | translate}}
       </mat-panel-title>
       <mat-panel-description>
-        01:00 pm - 2:30 p.m
+        12:00 pm - 2:00 p.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <p>{{ 'This is lunch time' | translate}}</p>
@@ -101,12 +101,12 @@
         {{ 'Time' | translate}} 5
       </mat-panel-title>
       <mat-panel-description>
-        2:30 p.m - 3:30 p.m
+        2:00 p.m - 3:00 p.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '2:30 p.m - 3:30 p.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '02:00 p.m - 03:00 p.m'"></app-charla>
       </div>
     </div>    
   </mat-expansion-panel>
@@ -116,12 +116,12 @@
         {{ 'Time' | translate}} 6
       </mat-panel-title>
       <mat-panel-description>
-        3:30 p.m - 4:30 p.m
+        3:00 p.m - 4:00 p.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '3:30 p.m - 4:30 p.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '03:00 p.m - 04:00 p.m'"></app-charla>
       </div>
     </div>    
   </mat-expansion-panel>
@@ -131,16 +131,16 @@
         {{ 'Time' | translate}} 7
       </mat-panel-title>
       <mat-panel-description>
-        4:30 p.m - 5:30 p.m
+        04:00 p.m - 05:00 p.m
       </mat-panel-description>
     </mat-expansion-panel-header>
     <div class="mb-20" flFlex flexLayout="row" flexLayout.lt-md="column">
       <div fxFlex *ngFor="let element of charlas">
-          <app-charla [charla]="element" *ngIf="element.strHora === '4:30 p.m - 5:30 p.m'"></app-charla>
+          <app-charla [charla]="element" *ngIf="element.strHora === '04:00 p.m - 05:00 p.m'"></app-charla>
       </div>
     </div>    
   </mat-expansion-panel>
-  <mat-expansion-panel>
+  <!-- <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{ 'Time' | translate}} 8
@@ -154,5 +154,5 @@
           <app-charla [charla]="element" *ngIf="element.strHora === '5:30 p.m - 6:30 p.m'"></app-charla>
       </div>
     </div>    
-  </mat-expansion-panel>
+  </mat-expansion-panel> -->
 </mat-accordion>

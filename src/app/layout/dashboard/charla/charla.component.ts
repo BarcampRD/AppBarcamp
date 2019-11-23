@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 export class Charla {
   numIdHorario = 0;
@@ -20,7 +21,7 @@ export class Charla {
 export class CharlaComponent implements OnInit {
   @Input() charla: Charla;
 
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService, public _sanitizer: DomSanitizer) { }
 
   ngOnInit() {
   }
